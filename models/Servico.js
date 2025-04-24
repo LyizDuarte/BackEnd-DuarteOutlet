@@ -74,4 +74,8 @@ export default class Servico {
     const servDAO = new ServicoDAO();
     return await servDAO.consultar(this);
   }
+  async consultarTitulo(titulo) {
+    const servDAO = new ServicoDAO();
+    return await servDAO.consultarTitulo(titulo);
+  }
 }

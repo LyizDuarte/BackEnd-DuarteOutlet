@@ -5,9 +5,9 @@ import routeDialogFlow from "./routes/dialogFlowRoute.js";
 const app = express();
 const host = "0.0.0.0";
 const port = 3000;
-
 app.use(express.json());
-app.use("/webhook", routeDialogFlow)
+app.use("/", express.static("./public"));
+app.use("/webhook", routeDialogFlow);
 app.use("/servico", routeServico);
 
 app.listen(port, host, () => {

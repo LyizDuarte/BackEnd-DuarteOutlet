@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duarte Outlet</title>
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+      df-messenger {
+        --df-messenger-bot-message: #0e1260;
+        --df-messenger-button-titlebar-color: #000000;
+        --df-messenger-chat-background-color: #2e2525;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #420808;
+        --df-messenger-user-message: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seja muito bem vindo a Duarte Outlet!</h1>
+    <h2>Experimente o nosso chatbot!</h2>
+  </body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Duarte Outlet"
+    chat-icon="https://1cdc-2804-2af0-28f-ec00-4da-fca-3b20-7977.ngrok-free.app/img/clothes-icon.png"
+    agent-id="f9f3fc48-4a29-4022-b76f-94a80f7c8cc1"
+    language-code="pt-br"
+  ></df-messenger>
+</html>
